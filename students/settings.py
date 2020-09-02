@@ -25,7 +25,7 @@ SECRET_KEY = 'k(6a@7jspdzu2iir&1qsr^1ilsot5a)j=#a-#@+4*(!y!j654q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['crud-api-swagger.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -127,6 +127,7 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' 
 }
 
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATIC_ROOT = os.path.join(BASE_DIR, 'build/static')
+STATICFILES_STORAGE = "whitenoise.django.GzipManifestStaticFilesStorage"
