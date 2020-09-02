@@ -25,7 +25,11 @@ SECRET_KEY = 'k(6a@7jspdzu2iir&1qsr^1ilsot5a)j=#a-#@+4*(!y!j654q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['*']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> 9c3a1ee60913be59c8d146d492cc3c79af4120fb
 
 
 # Application definition
@@ -78,7 +82,6 @@ WSGI_APPLICATION = 'students.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
 
 
 DATABASES = {
